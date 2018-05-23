@@ -15,6 +15,9 @@
   ],
   "author": "Saksham Saxena",
   "license": "MIT",
+  "bin": {
+    "patrakaar": "./Patrakaar.js"
+  },
   "bugs": {
     "url": "https://github.com/sakshamsaxena/Patrakaar/issues"
   },

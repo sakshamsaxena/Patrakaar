@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // Modules to be used
 var request = require('request');
 var cheerio = require('cheerio');
