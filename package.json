@@ -1,0 +1,26 @@
+{
+  "name": "patrakaar",
+  "version": "0.0.0",
+  "description": "Patrakaar crawls Medium, like a typical Patrakaar.",
+  "main": "Patrakaar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sakshamsaxena/Patrakaar.git"
+  },
+  "keywords": [
+    "crawling"
+  ],
+  "author": "Saksham Saxena",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sakshamsaxena/Patrakaar/issues"
+  },
+  "homepage": "https://github.com/sakshamsaxena/Patrakaar#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "request": "^2.87.0"
+  }
+}
