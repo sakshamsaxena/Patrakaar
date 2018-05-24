@@ -55,7 +55,7 @@ request(U, function(error, response, body) {
 		// Got the HTML
 		$ = cheerio.load(body);
 		// Extract Unique Links only
-		csv+="1,\n";
+		csv+="Level 1,\n";
 		$("body a").each(function() {
 			var key = $(this).attr("href");
 			// TODO : Check if this is worthy of counting or not
@@ -69,7 +69,7 @@ request(U, function(error, response, body) {
 		console.log(`Got ${trueCount} links!`);
 		// Update CSV
 		csv+=L.toString();
-		csv+="\n2,\n";
+		csv+="\nLevel 2,\n";
 		// Begin Crawling
 		process.nextTick(function() {
 			for (let i = 0; i < C; i++) {
@@ -126,11 +126,12 @@ function launchRequest(u, ind) {
 }
 
 function writeJSON(m) {
-	fs.writeFile('map.csv', m, function(err) {
+	var fd = 'map.csv';
+	fs.writeFile(fd, m, function(err) {
 		if(err) {
 			throw err;
 		} else {
-			console.log('Done!')
+			console.log(`Written to ${fd}!`);
 		}
 	})
 }
